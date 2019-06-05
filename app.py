@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect
+# This is for deploying flask
 
 app = Flask(__name__)
 
