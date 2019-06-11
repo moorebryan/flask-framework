@@ -5,11 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('index.html')
+    print('In index')
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
-  return render_template('about.html')
+    print('In about')
+    return render_template('about.html')
 
 if __name__ == '__main__':
-  app.run(port=33507)
+    app.run(port=33507)
